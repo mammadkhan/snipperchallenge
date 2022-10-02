@@ -1,0 +1,74 @@
+.Hero{
+    min-height: calc(100vh - 120px);
+    text-align: center;
+    padding:0px 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    .HeroTextArea{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:1rem;
+    }
+    .HeroText{
+        font-size: 3rem;
+        font-weight: 700;
+        padding:0px 5vw;
+    }
+    .HeroP{
+        color:rgb(75, 75, 75);
+        padding:0px 4vw;
+    }
+    .catButton{
+        border: none;
+        width: 100%;
+        height: 55px;
+        border-radius: 5px;
+        background-color: black;
+        color:white;
+        font-size: 1rem;
+        cursor: pointer;
+        span{
+            color:rgb(150, 150, 150);
+        }
+    }
+    .mark{
+        color:rgb(75, 75, 75);
+    }
+}
+
+.HeroBG{
+    position: absolute;
+    top:-120px;
+    left:0;
+    z-index: -1;
+    width: 100%;
+    min-height: calc(100% + 120px);
+    background-image: url('../images/Background.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (min-width: 767px) {
+    .Hero{
+        .catButton{
+            width: 230px;
+        }
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .Hero{
+        padding: 0px 10vw;
+        .HeroText{
+            font-size: 3.5rem;
+        }
+        .HeroP{
+            font-size:1.1rem;
+            padding:0px 22vw;
+        }
+    }
+}

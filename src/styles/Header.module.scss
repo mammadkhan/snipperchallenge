@@ -1,0 +1,55 @@
+.Header{
+    height: 120px;
+    padding:0px 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .hamMenu{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .headerDesk{
+        display: none;
+        gap:1rem;
+        align-items: center;
+        a{
+            text-decoration: none;
+            color:black;
+        }
+        svg{
+            cursor: pointer;
+        }
+    }
+    .catButton{
+        border: none;
+        width: 230px;
+        height: 55px;
+        border-radius: 5px;
+        background-color: black;
+        color:white;
+        font-size: 1rem;
+        cursor: pointer;
+        span{
+            color:rgb(150, 150, 150);
+        }
+    }
+}
+
+
+@media screen and (min-width:767px) {
+    .Header{
+        .hamMenu{
+            display:none;
+        }
+        .headerDesk{
+            display: flex;
+        }
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .Header{
+        padding: 0px 10vw;
+    }
+}

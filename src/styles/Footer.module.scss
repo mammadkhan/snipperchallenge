@@ -1,0 +1,30 @@
+.Footer{
+    height: 120px;
+    padding: 20px 5vw;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    a{
+        text-decoration: none;
+        color:rgb(75, 75, 75);
+    }
+    .footerLinks a:last-child{
+        margin-left: 2rem;
+    }
+
+}
+
+@media screen and (min-width: 767px){
+    .Footer{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+@media screen and (min-width: 1280px){
+    .Footer{
+        padding: 20px 10vw;
+    }
+}
